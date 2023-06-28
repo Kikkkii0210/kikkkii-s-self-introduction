@@ -1,109 +1,144 @@
-<!DOCTYPE html>
-<html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - A Pen by Kikkkii</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <script src="https://kit.fontawesome.com/409f819773.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My First web Demo!</title>
-    <style type="text/css" media="all">@import "css/master.css";</style>
-  </head>
-  
-  <body>
-    <div class="page-container">
-      <div class="main-nav">
-        <h1>Hello! I'm Kiki. Nice to Meet You </h1>
-      </div>
-      <div class="multi">
-        <div class="content">
-          <dis class="heading"><h2>Self-Introduction</h2></dis>
-          <p class="context">
-            Name: Ho IonSam
-            <br>Nick Name: Kiki
-            <br>Birth: 02.10
-            <br>Signs: Aquarius
-            <br>MBTI: ENTP (Newest)
-          </p>
-          <hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
-            <dis class="heading"><h2>Social</h2></dis>
-            <p class="ct1">
-              Email: kikiho20060210@gmail.com
-              <br>Instagram: kiki.02_10@Instagram
-              <br>Facebook: Kiki Ho@Facebook
-            </p>
-            <hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
-            <div class="heading"><h2>Hobby and Interest</h2>
-            <p class="context">
-              Reading
-              <br>Travel
-              <br>Photograph
-              <br>Singing 
-              <br>Dancing
-              <br>Cycling
-              <br>Archery
-              <br>Basketball
-              <br>Badminton
-            </p>
-            <hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
-          </div>
-        </div>
-        <div class="footer">
-          <div class="shelf">
-            <div class="heading"><h2>Qualification</h2></div>
+<div class="container" ng-app="tabApp">
+  <div class="row" ng-controller="TabController">
+  	<div class="col-md-2">
+  		<ul class="nav nav-pills nav-stacked">
+       	<li ng-class="{ active: isSet(1) }">
+          <a href ng-click="setTab(1)">Home</a>
+       	</li>
+       	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Qualification</a>
+       	</li>
+       	<li ng-class="{ active: isSet(3) }">
+          	<a href ng-click="setTab(3)">Achievements</a>
+       	</li>
+        <li ng-class="{ active: isSet(4) }">
+          	<a href ng-click="setTab(4)">Extracurricular Activities</a>
+       	</li>
+        <li ng-class="{ active: isSet(5) }">
+          	<a href ng-click="setTab(5)">Community Involvement</a>
+       	</li>
+     	</ul>
+  	</div>
+    
+    <div class="col-md-8">
+  		<div class="jumbotron">
+       	<div ng-show="isSet(1)">
+          <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+         	 <h1>Profile information</h1>
+          	<p>
+              Here is Kiki, a senior secondary student from Macau St. Joseph Parish Secondary School No.5
+          	</p>
+          <hr width=80% size=3 color=black style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
             <p>
+              <div class="info">
+                <dis class="sf"><img src="https://i.imgur.com/Ms38CLL.jpg" alt="" width=150/></dis>
+                <dis class="tx1">
+                <h3>Kiki HO</h3>
+                <ul>
+                  <li>Name: Ho IONSAM</li>
+                  <li>Birth: 10 Feburary</li>
+                  <li>Signs: Aquarius</li>
+                  <li>MBTI: ENTP-A (Newest)</li>
+                </ul>
+                </dis>
+              </div>
+          <hr>
+              <h3>Social media</h3>
               <ul>
-                <li>Microsoft Office Specialist (Office Powerpoint 2016)</li>
-                <li>Chinese Culture and Knowledge Qualification Examination</li>
-                <li>Messengers of Peace</li>
-                <li>Scout Leader Training Course</li>
-            </ul>
+                <li><i class="fa-solid fa-envelope"> Email</i><br><a href="mailto:kikiho20060210@gmail.com">kikiho20060210@gmail.com</a></li>
+                <li><i class="fa-brands fa-square-instagram fa-lg"></i> INSTAGRAM</i>
+                    <br><a>@kiki.02_10
+                    <br>@kiki.s_plog</a>
+                </li>
+                <li><i class="fa-brands fa-facebook"> Facebook</i><br><a>@Kiki Ho</a></li>
+              </ul>
+              <hr>
+              <h3>Hobby and interest</h3>
+              <ul>
+                <li>Travelling</li>
+                <li>Photograph</li>
+                <li>Dancing</li>
+                <li>Cycling</li>
+              </ul>
             </p>
-            <hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
-          <div class="heading"><h2>Academic Awards and Achievements</h2></div>
+         </div>
+        <div ng-show="isSet(2)">
+          <h1>Qualification</h1>
           <p>
             <ul>
-              <li>2022 International Brain Bee Competition-Macau Region Intra-school Competition (Merit)</li>
-              <li>Inter-school The award for Outstanding Achievement</li>
-
+                <li>Microsoft Office Specialist (Office Powerpoint 2016)
+                  <button id="show1">show</button>
+<dialog id="infoModal">
+  <a href="https://imgur.com/rKcNqV6"><img src="https://i.imgur.com/rKcNqV6.jpg" title="source: imgur.com" width=500/></a>
+  <button id="close1">close</button>
+</dialog>
+              </li>
+                <li>Chinese Culture and Knowledge Qualification Examination
+                  <button id="show2">show</button>
+<dialog id="infoModal">
+  <p>Not yet upload</p>
+  <button id="close2">close</button>
+              </li>
+                <li>Messengers of Peace
+                  <button id="show3">show</button>
+<dialog id="infoModal">
+  <p>Not yet upload</p>
+  <button id="close3">close</button>
+              </li>
+                <li>Scout Leader Training Course
+                  <button id="show4">show</button>
+<dialog id="infoModal">
+  <a href="https://imgur.com/tGiFHfW"><img src="https://i.imgur.com/tGiFHfW.jpg" title="source: imgur.com" /></a>
+  <button id="close4">close</button>
+              </li>
             </ul>
-            
-
           </p>
-          <hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
-            <div class="heading"><h2>Extracurricular Activities</h2></div>
-            <p>
-              <ul>
+     	   </div>
+        <div ng-show="isSet(3)">
+          <h1>Academic achievements</h1>
+          <p>
+            <ul>
+              <li>2022 International Brain Bee Competition-Macau Region Intra-school Competition (Merit)
+                <button id="show4">show</button>
+<dialog id="infoModal">
+  <a href="https://imgur.com/4gsQsNJ"><img src="https://i.imgur.com/4gsQsNJ.jpg" title="source: imgur.com" /></a>
+  <button id="close4">close</button>
+              </li>
+              <li>2021/22 Inter-school The award for Outstanding Achievement</li>
+            </ul>
+          </p>
+     	   </div>
+        <div ng-show="isSet(4)">
+          <h1>Extracurricular Activities</h1>
+          <p>
+            <ul>
                 <li>Campus Weather Group	September 2022 - Present</li>
                 <li>SES English Booster Class	 Winter 2022 - Present</li>
                 <li>Youth Inclusion Ambassador	  October 2022 - November 2022</li>
                 <li>Epee and Foil Class	 Summer 2020 - Spring 2021</li>
                 <li>Guia Juvenil para Combater o Crime	  July 2019 - July 2020</li>
               </ul>
-            </p>
-          <hr width=80% size=3 color=#5151A2 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
-          <div class="heading"><h2>Community Involvement</h2></div>
-          <p>
-            <h3>Volunteer Service Participant (Scout,UGAMM,FAOM,MSO, etc.)</h3> September 2018-Present
-          <br>Have participated in visit nursing homes, flag-selling, maintain order, clean up public places and other activities.
-          <h3>Scout (Group No.39)</h3>  September 2019-Present
-          <h3>Prefect （Inner-School)</h3> Spring 2019-Present
-          <h3>School Union</h3> September 2022-Present
-          <h3>Environmental Awareness</h3> September 2020-Present
-          <br>Usually help the recycling of plastic bottle.
           </p>
-          </div>
-        </div>
-      </div>
-  </body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+     	   </div>
+        <div ng-show="isSet(5)">
+          <h1>Community Involvement</h1>
+          <p>
+            <ul>
+              <li><h3>Volunteer Service Participant (Scout,UGAMM,FAOM,MSO, etc.)</h3> September 2018-Present
+          <br>Have participated in visit nursing homes, flag-selling, maintain order, clean up public places and other activities.</li>
+          <li><h3>Scout (Group No.39)</h3>  September 2019-Present</li>
+          <li><h3>Prefect （Inner-School)</h3> Spring 2019-Present</li>
+          <li><h3>School Union</h3> September 2022-Present</li>
+          <li><h3>Environmental Awareness</h3> September 2020-Present
+          <br>Usually help the recycling of plastic bottle.</li>
+          </p>
+     	   </div>
+  	   </div>
+     </div>
+  </div>
 </body>
-</html>
