@@ -20,4 +20,3 @@ btn.addEventListener("click", function(){
 close.addEventListener("click", function(){
   infoModal.close();
 })
-
