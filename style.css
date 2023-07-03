@@ -1,72 +1,104 @@
-angular.module('tabApp', [])
-  .controller('TabController', ['$scope', function($scope) {
-    $scope.tab = 1;
+body {
+  margin: 15px;
+}
 
-    $scope.setTab = function(newTab){
-      $scope.tab = newTab;
-    };
+/* text recolor */
+h1, a {
+  color: #4DC9C9 !important;
+}
 
-    $scope.isSet = function(tabNum){
-      return $scope.tab === tabNum;
-    };
-}]);
+h3 {
+  color: #102590 !important;
+}
 
-let btn1=document.querySelector("#show1");
-let infoModal1=document.querySelector("#infoModal1");
-let close1=document.querySelector("#close1");
-btn1.addEventListener("click", function(){
-  infoModal1.showModal();
-})
-close1.addEventListener("click", function(){
-  infoModal1.close();
-});
+p {
+  color: #1EAFD5 !important;
+}
 
-let btn2=document.querySelector("#show2");
-let infoModal2=document.querySelector("#infoModal2");
-let close2=document.querySelector("#close2");
-btn2.addEventListener("click", function(){
-  infoModal2.showModal();
-})
-close2.addEventListener("click", function(){
-  infoModal2.close();
-})
+ul li {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1EAFD5 !important;
+  margin-left: 0;
+}
 
-let btn3=document.querySelector("#show3");
-let infoModal3=document.querySelector("#infoModal3");
-let close3=document.querySelector("#close3");
-btn3.addEventListener("click", function(){
-  infoModal3.showModal();
-})
-close3.addEventListener("click", function(){
-  infoModal3.close();
-})
+time {
+  color: #1E69D5;
+}
 
-let btn4=document.querySelector("#show4");
-let infoModal4=document.querySelector("#infoModal4");
-let close4=document.querySelector("#close4");
-btn4.addEventListener("click", function(){
-  infoModal4.showModal();
-})
-close4.addEventListener("click", function(){
-  infoModal4.close();
-})
+/* button recolor */
+.nav-pills > li.active > a, .btn-primary {
+  background-color: #6C6C6C !important;
+  border-color: #6C6C6C !important;
+  border-radius: 25px;
+}
 
-let btn5=document.querySelector("#show5");
-let infoModal5=document.querySelector("#infoModal5");
-let close5=document.querySelector("#close5");
-btn5.addEventListener("click", function(){
-  infoModal5.showModal();
-})
-close5.addEventListener("click", function(){
-  infoModal5.close();
-})
+.sf {
+  float: right;
+  vertical-align: top;
+  margin: 5px;
+  border-style: groove;
+  border-width: 5px;
+  border-color: #C9EDF6;
+}
 
-let btn6=document.querySelector("#show6");
-let infoModal6=document.querySelector("#infoModal6");
-let close6=document.querySelector("#close6");
-btn6.addEventListener("click", function(){
-  infoModal6.showModal();
-})
-close6.addEventListener("click", function(){
-  infoModal6.close();
-})
+dialog {
+  border: none;
+  box-shadow: 0 2px 6px #ccc;
+  border-radius: 10px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 30px auto;
+}
+
+.line {
+  padding: 5px 0 5px 30px;
+  border-left: 3px solid #5ACFD6;
+}
+
+.p1 {
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #5ACFD6;
+  color: #03254a;
+  margin: 20px 0;
+  position: relative;
+}
+
+.p1:before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #D2FAFB;
+  border-radius: 50%;
+  background-color: #5ACFD6;
+}
+
+.p1:after {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid #5ACFD6;
+}
