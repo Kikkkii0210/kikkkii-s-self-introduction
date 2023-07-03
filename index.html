@@ -1,8 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tab example in AngularJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <head>
   <script src="https://kit.fontawesome.com/409f819773.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
 <div class="container" ng-app="tabApp">
   <div class="row" ng-controller="TabController">
   	<div class="col-md-2">
@@ -28,7 +37,6 @@
     <div class="col-md-8">
   		<div class="jumbotron">
        	<div ng-show="isSet(1)">
-          <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
          	 <h1>Profile information</h1>
           	<p>
               Here is Kiki, a senior secondary student from Macau St. Joseph Parish Secondary School No.5
@@ -36,7 +44,7 @@
           <hr width=80% size=3 color=black style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
             <p>
               <div class="info">
-                <dis class="sf"><img src="https://i.imgur.com/Ms38CLL.jpg" alt="" width=150/></dis>
+                <dis class="sf"><img src="https://imgur.com/wja1UEH.jpg" alt="" width=150/></dis>
                 <dis class="tx1">
                 <h3>Kiki HO</h3>
                 <ul>
@@ -52,10 +60,10 @@
               <ul>
                 <li><i class="fa-solid fa-envelope"> Email</i><br><a href="mailto:kikiho20060210@gmail.com">kikiho20060210@gmail.com</a></li>
                 <li><i class="fa-brands fa-square-instagram fa-lg"></i> INSTAGRAM</i>
-                    <br><a>@kiki.02_10
+                    <br><a href="https://www.instagram.com/kiki.02_10/">@kiki.02_10
                     <br>@kiki.s_plog</a>
                 </li>
-                <li><i class="fa-brands fa-facebook"> Facebook</i><br><a>@Kiki Ho</a></li>
+                <li><i class="fa-brands fa-facebook"> Facebook</i><br><a href="https://www.instagram.com/kiki.s_plog/">@Kiki Ho</a></li>
               </ul>
               <hr>
               <h3>Hobby and interest</h3>
@@ -73,27 +81,27 @@
             <ul>
                 <li>Microsoft Office Specialist (Office Powerpoint 2016)
                   <button id="show1">show</button>
-<dialog id="infoModal">
-  <a href="https://imgur.com/rKcNqV6"><img src="https://i.imgur.com/rKcNqV6.jpg" title="source: imgur.com" width=500/></a>
+<dialog id="infoModal1">
+  <a href="https://imgur.com/rKcNqV6"><img src="https://i.imgur.com/rKcNqV6.jpg" title="source: imgur.com" width=600/></a>
   <button id="close1">close</button>
 </dialog>
               </li>
                 <li>Chinese Culture and Knowledge Qualification Examination
                   <button id="show2">show</button>
-<dialog id="infoModal">
+<dialog id="infoModal2">
   <p>Not yet upload</p>
   <button id="close2">close</button>
               </li>
                 <li>Messengers of Peace
                   <button id="show3">show</button>
-<dialog id="infoModal">
+<dialog id="infoModal3">
   <p>Not yet upload</p>
   <button id="close3">close</button>
               </li>
                 <li>Scout Leader Training Course
                   <button id="show4">show</button>
-<dialog id="infoModal">
-  <a href="https://imgur.com/tGiFHfW"><img src="https://i.imgur.com/tGiFHfW.jpg" title="source: imgur.com" /></a>
+<dialog id="infoModal4">
+  <a href="https://imgur.com/tGiFHfW"><img src="https://i.imgur.com/tGiFHfW.jpg" title="source: imgur.com" width=600/></a>
   <button id="close4">close</button>
               </li>
             </ul>
@@ -104,41 +112,69 @@
           <p>
             <ul>
               <li>2022 International Brain Bee Competition-Macau Region Intra-school Competition (Merit)
-                <button id="show4">show</button>
-<dialog id="infoModal">
-  <a href="https://imgur.com/4gsQsNJ"><img src="https://i.imgur.com/4gsQsNJ.jpg" title="source: imgur.com" /></a>
-  <button id="close4">close</button>
+                <button id="show5">show</button>
+<dialog id="infoModal5">
+  <a href="https://imgur.com/4gsQsNJ"><img src="https://i.imgur.com/4gsQsNJ.jpg" title="source: imgur.com" width=600/></a>
+  <button id="close5">close</button>
               </li>
-              <li>2021/22 Inter-school The award for Outstanding Achievement</li>
+              <li>2021/22 Inter-school The award for Outstanding Achievement
+                <button id="show6">show</button>
+<dialog id="infoModal6">
+  <p>Not yet upload</p>
+  <button id="close6">close</button>
+              </li>
             </ul>
           </p>
      	   </div>
         <div ng-show="isSet(4)">
           <h1>Extracurricular Activities</h1>
           <p>
-            <ul>
-                <li>Campus Weather Group	September 2022 - Present</li>
-                <li>SES English Booster Class	 Winter 2022 - Present</li>
-                <li>Youth Inclusion Ambassador	  October 2022 - November 2022</li>
-                <li>Epee and Foil Class	 Summer 2020 - Spring 2021</li>
-                <li>Guia Juvenil para Combater o Crime	  July 2019 - July 2020</li>
-              </ul>
+          <div class="container">
+  <div class="line">
+    <h3>2022/2023</h3>
+    <p class="p1">Campus Weather Group<br><time>September 2022-June 2023</time></p>
+    <p class="p1">SES English Booster Class<br><time>Winter 2022-June 2023</time></p>
+    <p class="p1">Korean class<br><time>Oct 2022-June 2023</time></p>
+
+    <h3>2021/2022</h3>
+    <p class="p1">Youth Inclusion Ambassador<br><time>Oct 2022-Nov 2022</time></p>
+    <p class="p1">MC class<br><time>Oct 2021-June 2022</time></p>
+
+    <h3>2020/2021</h3>
+    <p class="p1">Diabolo<br><time>Oct 2020-Jun 2021</time></p>
+    
+    <h3>2019/2020</h3>
+    <p class="p1">Guia Juvenil para Combater o Crime<br><time>July 2019-July 2020</time></p>
+    <p class="p1">Diabolo<br><time>Oct 2019-Feb 2020</time></p>
+    
+    <h3>2018/2019</h3>
+    <p class="p1">Violin<br><time>Oct 2018-Feb 2020</time></p>
+    <p class="p1">Diabolo<br><time>Feb 2019-Jun 2019</time></p>
+  </div>
+</div>
           </p>
      	   </div>
         <div ng-show="isSet(5)">
           <h1>Community Involvement</h1>
           <p>
             <ul>
-              <li><h3>Volunteer Service Participant (Scout,UGAMM,FAOM,MSO, etc.)</h3> September 2018-Present
+              <li><h3>Volunteer Service Participant (Scout,UGAMM,FAOM,MSO, etc.)</h3><time>September 2018-Present</time>
           <br>Have participated in visit nursing homes, flag-selling, maintain order, clean up public places and other activities.</li>
-          <li><h3>Scout (Group No.39)</h3>  September 2019-Present</li>
-          <li><h3>Prefect （Inner-School)</h3> Spring 2019-Present</li>
-          <li><h3>School Union</h3> September 2022-Present</li>
-          <li><h3>Environmental Awareness</h3> September 2020-Present
+          <li><a href="https://www.facebook.com/cdsjscoutgp39/"><h3>Scout (Group No.39)</h3></a><time>September 2019-Present</time></li>
+          <li><a href="https://www.instagram.com/cdsj5_prefect_official/"><h3>Prefect （Inner-School)</h3></a><time>Spring 2019-Present</time></li>
+          <li><a href="https://www.instagram.com/cdsj5.su/"><h3>School Union</h3></a><time>September 2022-Present</time></li>
+          <li><h3>CDSJ5 Flag-Guards</h3><time>2020-Present</time></li>
+          <li><h3>Environmental Awareness</h3><time>September 2020-Present</time>
           <br>Usually help the recycling of plastic bottle.</li>
+             </ul>
           </p>
      	   </div>
   	   </div>
      </div>
   </div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js'></script><script  src="./script.js"></script>
+
 </body>
+</html>
